@@ -1,0 +1,249 @@
+﻿body {
+}
+
+.main-settings {
+    width: 1170px;
+    margin: auto; 
+}
+
+.body-head {          
+}
+
+.body-content {
+    background-color: aqua;
+    height: 200px
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.top-navbar {
+    margin: 0; 
+    float: right;
+    height: 100%;
+    display: table;
+   }
+
+.top-navbar-item {
+    display: table-cell; 
+    vertical-align: middle;    
+    padding-left: 40px; 
+}
+
+.top-navbar-text {
+    font-size: 16px;   
+}
+.top-navbar-text:hover {
+    text-decoration: none;
+} 
+
+.top-bar {
+    vertical-align: top;
+    height: 40px;
+}
+
+.middle-bar {
+    height: 90px;
+    width: 100%;
+    vertical-align: top;
+}
+
+.logo-bar {
+    background-color: rgb(246,246,246);
+    vertical-align: top;
+    float: right;
+    height: 100%;
+    width: 89%;
+}
+
+.logo-img {
+    float: left;
+    height: 100%;
+}
+
+.middle-navbar {
+    height: 100%;
+    float: right;
+} 
+
+.middle-navbar-item-li {
+    height: 100%;
+    float: right;
+    margin-left: 5px;
+    display: inline-block; 
+} 
+
+.middle-navbar-item{
+    display: inline-block;     
+    height: 100%;
+    width: 150px; 
+}
+
+.middle-navbar-item-content {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.middle-navbar-item-content-image {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.middle-navbar-item:hover {
+    text-decoration: none;
+} 
+
+.blue {
+    background-color: rgb(5, 174, 204);
+}
+.blue:hover {
+    background-color: rgb(5, 174, 224);
+}
+
+.red {
+    background-color: rgb(240,98,110);
+}
+.red:hover {
+    background-color: rgb(260,98,110);
+}
+
+.middle-nav-bar-text {
+    color: white;
+    font-size: 16px;
+    display: table-cell;
+    vertical-align: middle;    
+}
+
+.right-align {
+    text-align: right;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.middle-navbar-image {
+    margin-left: 5px;
+}
+
+.bottom-bar {
+    background-color: rgb(5, 174, 204);
+    height: 70px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.bottom-navbar {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+} 
+
+.bottom-navbar-item {
+    height: 100%;
+    width: 120px;
+    display: inline-table; 
+}
+
+.bottom-navbar-item:hover {
+    background-color: white;
+    text-decoration: none;
+} 
+
+.bottom-nav-bar-item-text {
+    color: white;
+    font-size: 16px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.dropdown-navbar {
+    position: absolute;
+    display: none;
+    float: left;
+    font-size: 14px;
+    list-style: none;
+    background-color: white;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.175);
+    box-shadow: 0 0 15px rgba(0,0,0,0.175);
+    opacity: 0.75;
+    padding-left: 0;
+}
+
+.bottom-navbar-item:hover  .dropdown-navbar {
+    display: block;
+}
+
+.bottom-navbar-item:hover  .bottom-nav-bar-item-text {
+    color: rgb(240, 100, 112); 
+}
+
+.dropdown-navbar-item-li {
+    width: 275px;
+}
+
+.dropdown-navbar-item {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.dropdown-navbar-item-image {
+    opacity: 1;
+    float: left;
+}
+
+.dropdown-navbar-item-name {
+    display: table-row;
+    text-align: left;
+    color: rgb(240, 100, 112);
+    font-size: 14px;
+}
+
+.dropdown-navbar-text {
+    display: table-row;
+    text-align: left;
+    font-size: 12px;
+}
+
+.dropdown-navbar-button {
+    background-color: rgb(5, 174, 204);
+    width: 140px;
+    display: table;
+}
+
+.dropdown-navbar-button-text {
+    color: white;
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: center;    
+    display: block;
+}
+
+.dropdown-navbar-button:hover {
+    background-color: rgb(5, 174, 224);
+    text-decoration: none;
+}
+
+.dropdown-navbar-separator {
+    height: 1px;
+}
+
+.dropdown-navbar-separator-img {
+    vertical-align: top;
+}
+
+.dropddown-navbar-footer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(240, 100, 112);
+}
