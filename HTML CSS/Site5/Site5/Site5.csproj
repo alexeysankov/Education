@@ -138,8 +138,11 @@
     <Content Include="Images\box.png" />
     <Content Include="Images\cart.png" />
     <Content Include="Images\dropdown-image.png" />
+    <Content Include="Images\kids.png" />
     <Content Include="Images\line.png" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\mens.png" />
+    <Content Include="Images\womens.png" />
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="scripts\bootstrap.js" />
