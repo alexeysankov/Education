@@ -1,12 +1,7 @@
 ﻿/*shared*/
 
 body {
-}
-
-input,
-select,
-textarea {
-    max-width: 280px;
+    padding-bottom: 500px;
 }
 
 .main-settings {
@@ -343,35 +338,138 @@ textarea {
 }
 
 .sale-menu {
-    overflow: hidden;
+    overflow: visible;
     position: absolute;
-    float: right;
+    margin-top: 8%;
+    margin-left: 8.9%;
 }
 
-.sale-menu-price {
+.sale-menu-price-div {
     background: rgb(50, 50, 50);
     width: 86px;
     height: 55px;
     float: right;
+    color: white;
+    display: table;
 }
 
-.sale-menu-card {
+.sale-menu-price {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.sale-menu-price-curr {
+    font-size: 15px;
+    line-height: 1;
+}
+
+.sale-menu-price-whole {
+    font-size: 30px;
+    line-height: 1;
+    margin-right: -5px;
+}
+
+.sale-menu-price-fractional {
+    font-size: 15px;
+    line-height: 1;
+    vertical-align: top
+}
+
+.sale-menu-div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.sale-menu-ref {
     float: right;
+    width: 53px;
+    height: 55px;
+    text-align: center;
+    display: table;
+}
+
+.card-ref {
     background: rgb(240, 98, 110);
-    width: 53px;
-    height: 55px;
 }
 
-.sale-menu-whislost {
-    float: right;
-    background: rgb(0, 161, 190);
-    width: 53px;
-    height: 55px;
+.sale-menu-card-image {
 }
 
-.sale-menu-caption {
-    float: right;
+.custom-title:hover::after { 
+    content: attr(data-title); 
+    position: absolute;     
+    z-index: 1; 
+    background: white;
+    font-size: 11px; 
+    padding: 5px 10px;
+    border: 1px solid rgb(240, 98, 110);
+}
+
+.baby-custom-title-card:hover::after {
+    left: 53%; top: -50%; 
+}
+
+.baby-custom-title-whislost:hover::after {
+    left: 37%; top: -50%; 
+}
+
+.whislost-ref {
+    background: rgb(0, 161, 190);    
+}
+
+.sale-menu-whislost-image {
+    
+}
+
+.menu-caption {
     background: rgb(5, 174, 204);
     width: 131px;
-    height: 55px;
+    height: 55px; 
+}
+
+.menu-caption {
+    color: white;
+    font-size: 20px;
+}
+
+.content-products-search-div {
+    width: 670px;
+    height: 171px;
+    background-color: rgb(240, 98, 110);
+    display: table;
+}
+
+.content-products-search {
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.content-products-search-text {
+    width: 100%;
+    height: 71px;
+    background-color: white;
+    display: table-cell;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.175);
+    box-shadow: 0 0 15px rgba(0,0,0,0.175);
+}
+
+.search-text {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 18px;
+}
+
+.content-products-search-href {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 20px;
 }
