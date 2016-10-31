@@ -149,6 +149,7 @@
     <Content Include="Images\logo.png" />
     <Content Include="Images\loupe.png" />
     <Content Include="Images\mens.png" />
+    <Content Include="Images\model1.png" />
     <Content Include="Images\women.png" />
     <Content Include="Images\womens.png" />
     <Content Include="Images\wristwatch.png" />

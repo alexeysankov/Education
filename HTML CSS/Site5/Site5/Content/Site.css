@@ -421,7 +421,7 @@ body {
 }
 
 .baby-custom-title-whislost:hover::after {
-    left: 37%; top: -50%; 
+    left: 39%; top: -50%; 
 }
 
 .crafts-custom-title-card:hover::after {
@@ -429,7 +429,7 @@ body {
 }
 
 .crafts-custom-title-whislost:hover::after {
-    left: 48%; top: -50%; 
+    left: 50%; top: -50%; 
 }
 
 .whislost-ref {
@@ -586,7 +586,7 @@ body {
     background-color: rgb(240, 98, 110);
 }
 
-.new-products-items {
+.products-items {
     padding-bottom: 6px;
     padding-top: 6px;
     display: inline-block;
@@ -595,10 +595,10 @@ body {
     line-height: 0;
     font-size: 1px;
     zoom: 1;
-    text-align-last: justify;
+    /*text-align-last: justify;*/
 }
 
-.new-products-items:after {
+.products-items:after {
     width: 100%;
     height: 0px;
     visibility: hidden;
@@ -611,13 +611,20 @@ body {
     display: inline-block;
 }
 
-.new-products-item {
+.products-item {
     display: inline-block;
     text-align: left;
     line-height: normal;
     vertical-align: top;
-    background: rgb(54, 42, 79);
     position: relative;
+}
+
+.new-item {
+    background: rgb(54, 42, 79);
+}
+
+.featured-item {
+    
 }
 
 .new-products-item-image:hover {
@@ -638,4 +645,35 @@ body {
 
 .new-products-item:hover .new-products-baby-shop{
     display: block;
+}
+
+.featured-item-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.featured-item-text {
+    height: 56px;
+    background-color: antiquewhite;
+}
+
+.featured-item-text-title {
+    font-size: 16px;
+    display: table-cell;
+}
+
+.featured-item-text-discription {
+    font-size: 16px;
+    display: table-cell;
+}
+
+.featured-item-menu {
+    height: 56px;
+    background-color: aqua;
+}
+
+.featured-item-sticker {
+    
 }

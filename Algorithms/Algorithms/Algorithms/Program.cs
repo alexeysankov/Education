@@ -6,7 +6,13 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            Task3.Func(new []{4,2,1,0,6,5,7,9,8,10}, 3);
+            var tmp = new Stack();
+            tmp.Push(11);
+            tmp.Push(22);
+            tmp.Push(33);
+            Console.WriteLine(tmp.Pop());
+            Console.WriteLine(tmp.Pop());
+            Console.WriteLine(tmp.Pop());
             Console.ReadKey();
         }
     }
