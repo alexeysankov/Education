@@ -177,7 +177,7 @@
 
 <div class="body-content main-settings">
 @*PRODUCTS*@
-<div class="content-products">
+<div class="body-content-block">
     <div class="content-products-item float-left">
         <a href="" class="content-products-item-ref">
             <img alt="" class="content-products-item-image" src="~/Images/mens.png"/>
@@ -281,9 +281,8 @@
     </div>
 </div>
 
-
 @*NEW PRODUCTS*@
-<div class="content-products new-products">
+<div class="body-content-block new-products">
     <div class="products-slide-bar">
         <div class="products-slide-bar-caption">New Products</div>
         <div class="products-slide-bar-buttons">
@@ -300,10 +299,10 @@
         </div>
     </div>
 
-    <div class="products-items">
-        <div class="products-item new-item">
-            <a href="" class="products-item new-item-href">
-                <img class="products-item new-item-image" src="~/Images/women.png"/>
+    <div class="stretch-block">
+        <div class="stretch-item new-item">
+            <a href="" class="new-products-item-href">
+                <img class="new-products-item-image" src="~/Images/women.png"/>
             </a>
             <div class="sale-menu new-products-baby-shop">
                 <div class="sale-menu-price-div">
@@ -329,9 +328,9 @@
             </div>
         </div>
 
-        <div class="products-item new-item">
-            <a href="" class="products-item new-item-href">
-                <img class="products-item new-item-image" src="~/Images/blue-fallal.png"/>
+        <div class="stretch-item new-item">
+            <a href="" class="new-products-item-href">
+                <img class="new-products-item-image" src="~/Images/blue-fallal.png"/>
             </a>
             <div class="sale-menu new-products-baby-shop">
                 <div class="sale-menu-price-div">
@@ -356,9 +355,9 @@
                         </span>
             </div>
         </div>
-        <div class="products-item new-item">
-            <a href="" class="products-item new-item-href">
-                <img class="products-item new-item-image" src="~/Images/wristwatch.png"/>
+        <div class="stretch-item new-item">
+            <a href="" class="new-products-item-href">
+                <img class="new-products-item-image" src="~/Images/wristwatch.png"/>
             </a>
             <div class="sale-menu new-products-baby-shop">
                 <div class="sale-menu-price-div">
@@ -387,7 +386,7 @@
 </div>
 
 @* FEATURED PRODUCTS *@
-<div class="content-products new-products">
+<div class="body-content-block featured-products">
     <div class="products-slide-bar">
         <div class="products-slide-bar-caption">Featured Products</div>
         <div class="products-slide-bar-buttons">
@@ -404,8 +403,8 @@
         </div>
     </div>
 
-    <div class="products-items">
-        <div class="products-item featured-item">
+    <div class="stretch-block">
+        <div class="stretch-item featured-item">
             <img src="~/Images/model1.png"/>
             <div class="featured-item-bar">
                 <div class="featured-item-text">
@@ -413,29 +412,316 @@
                     <span class="featured-item-text-discription">Short Description here</span>
                 </div>
                 <div class="featured-item-menu">
-                    @* menu *@
+                    <div class="sale-menu-price-div gray-price-div red-item">
+                        <div class="sale-menu-price">
+                            <span class="sale-menu-price-curr">$</span>
+                            <span class="sale-menu-price-whole">99.</span>
+                            <span class="sale-menu-price-fractional">00</span>
+                        </div>
+                    </div>
+                    <a href="" class="sale-menu-ref gray-ref">
+                        <div class="sale-menu-div">
+                            <img alt="" src="~/Images/gray-cart.png"/>
+                        </div>
+                    </a>
+                    <a href="" class="sale-menu-ref gray-ref">
+                        <div class="sale-menu-div">
+                            <img alt="" src="~/Images/gray-box.png"/>
+                        </div>
+                    </a>
+                    <a href="" class="sale-menu-ref gray-ref">
+                        <div class="sale-menu-div">
+                            <img alt="" src="~/Images/arrows.png"/>
+                        </div>
+                    </a>
                 </div>
-                <div class="featured-item-sticker">
-                    @* sticker *@
+            </div>
+            <div class="featured-item-sticker red-item">
+                <span class="featured-item-sticker-text">20% OFF</span>
+            </div>
+        </div>
+
+        <div class="stretch-item featured-item">
+            <img src="~/Images/model2.png"/>
+            <div class="featured-item-bar">
+                <div class="featured-item-text">
+                    <span class="featured-item-text-title">Product Title here</span>
+                    <span class="featured-item-text-discription">Short Description here</span>
+                </div>
+                <div class="featured-item-menu">
+                    <div class="sale-menu-price-div gray-price-div red-item">
+                        <div class="sale-menu-price">
+                            <span class="sale-menu-price-curr">$</span>
+                            <span class="sale-menu-price-whole">99.</span>
+                            <span class="sale-menu-price-fractional">00</span>
+                        </div>
+                    </div>
+                    <a href="" class="sale-menu-ref gray-ref">
+                        <div class="sale-menu-div">
+                            <img alt="" src="~/Images/gray-cart.png"/>
+                        </div>
+                    </a>
+                    <a href="" class="sale-menu-ref gray-ref">
+                        <div class="sale-menu-div">
+                            <img alt="" src="~/Images/gray-box.png"/>
+                        </div>
+                    </a>
+                    <a href="" class="sale-menu-ref gray-ref">
+                        <div class="sale-menu-div">
+                            <img alt="" src="~/Images/arrows.png"/>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="products-item featured-item">
-            <img src="~/Images/model1.png" />
+        <div class="stretch-item featured-item">
+            <img src="~/Images/model3.png"/>
+            <div class="featured-item-bar">
+                <div class="featured-item-text">
+                    <span class="featured-item-text-title">Product Title here</span>
+                    <span class="featured-item-text-discription">Short Description here</span>
+                </div>
+                <div class="featured-item-menu">
+                    <div class="sale-menu-price-div gray-price-div blue-item">
+                        <div class="sale-menu-price">
+                            <span class="sale-menu-price-curr">$</span>
+                            <span class="sale-menu-price-whole">99.</span>
+                            <span class="sale-menu-price-fractional">00</span>
+                        </div>
+                    </div>
+                    <a href="" class="sale-menu-ref gray-ref">
+                        <div class="sale-menu-div">
+                            <img alt="" src="~/Images/gray-cart.png"/>
+                        </div>
+                    </a>
+                    <a href="" class="sale-menu-ref gray-ref">
+                        <div class="sale-menu-div">
+                            <img alt="" src="~/Images/gray-box.png"/>
+                        </div>
+                    </a>
+                    <a href="" class="sale-menu-ref gray-ref">
+                        <div class="sale-menu-div">
+                            <img alt="" src="~/Images/arrows.png"/>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="featured-item-sticker blue-item">
+                <span class="featured-item-sticker-text">New</span>
+            </div>
         </div>
 
-        <div class="products-item featured-item">
-            <img src="~/Images/model1.png" />
-        </div>
-
-        <div class="products-item featured-item">
-            <img src="~/Images/model1.png" />
+        <div class="stretch-item featured-item">
+            <img src="~/Images/model4.png"/>
+            <div class="featured-item-bar">
+                <div class="featured-item-text">
+                    <span class="featured-item-text-title">Product Title here</span>
+                    <span class="featured-item-text-discription">Short Description here</span>
+                </div>
+                <div class="featured-item-menu">
+                    <div class="sale-menu-price-div gray-price-div red-item">
+                        <div class="sale-menu-price">
+                            <span class="sale-menu-price-curr">$</span>
+                            <span class="sale-menu-price-whole">99.</span>
+                            <span class="sale-menu-price-fractional">00</span>
+                        </div>
+                    </div>
+                    <a href="" class="sale-menu-ref gray-ref">
+                        <div class="sale-menu-div">
+                            <img alt="" src="~/Images/gray-cart.png"/>
+                        </div>
+                    </a>
+                    <a href="" class="sale-menu-ref gray-ref">
+                        <div class="sale-menu-div">
+                            <img alt="" src="~/Images/gray-box.png"/>
+                        </div>
+                    </a>
+                    <a href="" class="sale-menu-ref gray-ref">
+                        <div class="sale-menu-div">
+                            <img alt="" src="~/Images/arrows.png"/>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-
+@* ABOUT US *@
+<div class="body-content-block about-us">
+    <div class="products-slide-bar slide-bar-about-us">
+        <div class="products-slide-bar-caption">Who We Are</div>
+    </div>
+    <div class="about-us-text-div">
+        <span class="about-us-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+            software like Aldus PageMaker including versions of Lorem Ipsum.
+        </span>
+    </div>
+    <div class="stretch-block">
+        <div class="stretch-item action-item">
+            <a href="" class="new-products-item-href">
+                <img src="~/Images/chose-products.png"/>
+            </a>
+        </div>
+        <div class="stretch-item action-item">
+            <a href="" class="new-products-item-href">
+                <img src="~/Images/register.png"/>
+            </a>
+        </div>
+        <div class="stretch-item action-item">
+            <a href="" class="new-products-item-href">
+                <img src="~/Images/checkout.png"/>
+            </a>
+        </div>
+    </div>
+    <div class="register-now-div">
+        <a href="" class="register-now-href">
+            <div class="register-now-text">
+                <span>Register Now</span>
+            </div>
+        </a>
+    </div>
 </div>
-</body>    
+</div>
+
+<div class="body-footer main-settings">
+    <div class="link-heap stretch-block">
+        <div class="link-heap-item stretch-item">
+            <div class="link-heap-item-caption">SHOPPING WITH US</div>
+            <div class="link-heap-item-refs">
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">why shop with us?</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">how it works</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">delivery</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">returns</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">where's my order</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">contact & help</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">wedding list</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">wish lists</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">gift vouchers</a>
+                </div>
+            </div>
+        </div>
+        <div class="link-heap-item stretch-item">
+            <div class="link-heap-item-caption">ABOUT US</div>
+            <div class="link-heap-item-refs">
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">our story</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">customer contact</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">awards</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">press centre</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">work with us</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">terms & conditions</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">privacy & cookies</a>
+                </div>
+            </div>
+        </div>
+        <div class="link-heap-item stretch-item">
+            <div class="link-heap-item-caption">SELLING WITH US</div>
+            <div class="link-heap-item-refs">
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">why join?</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">faqs</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">apply to sell with us</a>
+                </div>
+                <div class="link-heap-href-div">
+                    <a href="" class="link-heap-href">affiliates</a>
+                </div>
+            </div>
+        </div>
+        <div class="link-heap-item stretch-item">
+            <div class="link-heap-item-caption">SIGNUP NEWSLETTER</div>
+            <div class="subscribe-block">
+                <div class="subscribe-block-title-div">
+                    <span class="subscribe-block-title">E.G.:ABC@DOMAIN.COM</span>
+                </div>
+                <div class="subscribe-href-div">
+                    <a href="" class="subscribe-href">SUBSCRIBE NOW</a>
+                </div>
+            </div>
+            <div class="social-href-block">
+                <div class="social-href-caption">KEEP IN TOUCH</div>
+                <div class="stretch-block social-href-items">
+                    <div class="stretch-item social-href-item">
+                        <a href="" class="">
+                            <img src="~/Images/rss.png"/>
+                        </a>
+                    </div>
+                    <div class="stretch-item social-href-item">
+                        <a href="" class="">
+                            <img src="~/Images/facebook.png"/>
+                        </a>
+                    </div>
+                    <div class="stretch-item social-href-item">
+                        <a href="" class="">
+                            <img src="~/Images/twitter.png"/>
+                        </a>
+                    </div>
+                    <div class="stretch-item social-href-item">
+                        <a href="" class="">
+                            <img src="~/Images/flickr.png"/>
+                        </a>
+                    </div>
+                    <div class="stretch-item social-href-item">
+                        <a href="" class="">
+                            <img src="~/Images/google.png"/>
+                        </a>
+                    </div>
+                    <div class="stretch-item social-href-item-empty">
+                        <a href="" class="">
+                            <img src=""/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="creater-block">
+        <div class="company-block">
+            <span class="creater-block-text">Copyrigth &#xA9 2014 Gift Shop, All right reserved</span>
+        </div>
+        <div class="designer-block">
+            <span class="creater-block-text">Designed by </span>
+            <span class="creater-block-text designer-name">Amysxain</span>
+        </div>
+    </div>
+</div>
+</body>
 
