@@ -6,7 +6,8 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Task13.Func(5));
+            //Task16.Func("()()()))))((()((()()()(");
+            Task16.Func("())()");
             Console.ReadKey();
         }
     }
