@@ -6,8 +6,7 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            //Task16.Func("()()()))))((()((()()()(");
-            Task16.Func("())()");
+            BlitzTask3.Func();
             Console.ReadKey();
         }
     }
