@@ -3,24 +3,18 @@
         "<table class=\"calendar-table\">" +
         "<thead>" +
         "<tr>" +
-        "<td colspan=\"4\">" +
-        "<select id=\"days-of-week\">" +
-        "<option value=\"0\">Junuary</option>" +
-        "<option value=\"1\">February</option>" +
-        "<option value=\"2\">March</option>" +
-        "<option value=\"3\">April</option>" +
-        "<option value=\"4\">May</option>" +
-        "<option value=\"5\">June</option>" +
-        "<option value=\"6\">July</option>" +
-        "<option value=\"7\">August</option>" +
-        "<option value=\"8\">September</option>" +
-        "<option value=\"9\">October</option>" +
-        "<option value=\"10\">November</option>" +
-        "<option value=\"11\">December</option>" +
-        "</select>" +
-        "<td colspan=\"3\">" +
-        "<input type=\"number\" id=\"year\" min=\"1970\" max=\"9999\" maxlength=\"4\">" +
-        "<tr><td>Mo<td>Tu<td>We<td>Th<td>Fr<td>Sa<td class=\"ui-datepicker-week-end\">Su" +
+        "<td colspan=\"7\">" +
+        "<div class=\"datepicker-header\">" +
+        "<div class=\"datepicker-title\">" +
+        "<span id=\"datepicker-month\">MMMM&nbsp;</span>" +
+        "<span id=\"datepicker-year\">YYYY</span>" +
+        "</div>" +
+        "<a id=\"next\" class=\"next\">" +
+        "<span>></span>" +
+        "<a id=\"prev\" class=\"prev\">" +
+        "<span><</span>" +
+        "</div>" +
+        "<tr><td>Mo<td>Tu<td>We<td>Th<td>Fr<td>Sa<td>Su" +
         "<tbody id=\"calendar-body\"></tbody>" +
         "</table>" +
         "</div>";
@@ -29,16 +23,32 @@
 
 FillTemplate();
 
+var monthNames = [
+        "January ", "February ", "March ", "April ", "May ", "June ",
+        "July ", "August ", "September ", "October ", "November ", "December "
+];
+
+var yearGlobal = new Date().getFullYear();
+var monthGlobal = new Date().getMonth();
+
 function FillCalendar(year, month) {
-    month = parseInt(month);
-    year = parseInt(year);
+    if (month < 0) {
+        year--;
+        month = 11;
+    }        
+    if (month > 11) {
+        year++;
+        month = 0;
+    }
+    yearGlobal = year;
+    monthGlobal = month;
     var lastDay = new Date(year, month + 1, 0).getDate();
     var lastDayOfWeek = new Date(year, month, lastDay).getDay();
     var firstDayOfWeek = new Date(year, month, 1).getDay();
     var calendar = "<tr>";
 
-    $("#days-of-week option[value='" + month + "']").prop("selected", true);
-    $("#year").val(year);
+    $("#datepicker-month").text(monthNames[month]);
+    $("#datepicker-year").text(year);
 
     if (firstDayOfWeek !== 0) {
         for (var i = 1; i < firstDayOfWeek; i++)
@@ -70,14 +80,14 @@ function FillCalendar(year, month) {
     $("#calendar-body").empty().append(calendar);
 
     $("#calendar-body tr td div").click(function () {
-        var date = new Date(parseInt($("#year").val()), parseInt($("#days-of-week").val()), $(this).text());
+        var date = new Date(yearGlobal, monthGlobal, $(this).text());
         $("#custom-datepicker").val(date.toLocaleDateString());
         $("#calendar-content").hide();
     });
-
-    $("#days-of-week").change(function () { FillCalendar($("#year").val(), $("#days-of-week").val()) });
-    $("#year").change(function () { FillCalendar($("#year").val(), $("#days-of-week").val()) });    
 };
+
+$("#next").click(function () { FillCalendar(yearGlobal, monthGlobal + 1) });
+$("#prev").click(function () { FillCalendar(yearGlobal, monthGlobal - 1) });
 
 $("#custom-datepicker").click(function () {
     FillCalendar(new Date().getFullYear(), new Date().getMonth());
